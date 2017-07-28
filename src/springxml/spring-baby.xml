@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                          http://www.springframework.org/schema/beans/spring-beans.xsd
+                          http://www.springframework.org/schema/context
+                          http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd"
+>
+    <!--byType byName 用法  constructor 构造器注入-->
+      <!--   <bean id="babyService" class="spring.baby.babyServiceImpl.babyServiceImpl">
+               &lt;!&ndash;<property name="babyDao" ref="babyDao"></property>&ndash;&gt;
+         </bean>-->
+<!--         <bean id="babyDao" class="spring.baby.babyDaoImpl.babyDaoImpl"></bean>-->
+         <!--       <context:component-scan base-package="spring.orgen">
+
+                </context:component-scan>
+                <context:component-scan base-package="spring.TwoInterface"></context:component-scan>
+                <context:component-scan base-package="spring.beanIOC"></context:component-scan>
+                <context:component-scan base-package="spring.GetResources"></context:component-scan>
+        <context:property-placeholder location="classpath*:/local.properties"></context:property-placeholder>
+    <context:component-scan base-package="spring.GenericParadigm"></context:component-scan>
+    <context:component-scan base-package="spring.Replace"></context:component-scan>-->
+
+   <!--
+     aop面向切面变成 demo
+
+   <bean id="buildAop" class="spring.buildAop.buildAopConfig.buildAopConfig"></bean>
+    <bean id="buildA" class="spring.buildAop.buildAop"></bean>
+
+    <aop:config>
+        <aop:aspect id="ba" ref="buildAop"> 方法
+            <aop:pointcut expression="execution(* spring.buildAop..*.*(..))"  id="baop"/>触发的点
+            <aop:before method="baby" pointcut-ref="baop"/> 触发后执行的方法
+        </aop:aspect>
+    </aop:config>-->
+
+</beans>
